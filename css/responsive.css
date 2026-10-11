@@ -1,0 +1,208 @@
+/* ==========================================
+   NMIT REDESIGN - RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* ------------------------------------------
+   1. SMALL MOBILE DEVICES (up to 480px)
+   ------------------------------------------ */
+@media (max-width: 480px) {
+  .top-bar__contact {
+    font-size: 0.72rem;
+    gap: var(--space-2);
+  }
+
+  .top-bar__links {
+    display: none; /* Accessible in mobile drawer */
+  }
+
+  .brand-logo__title {
+    font-size: 1.1rem;
+  }
+
+  .brand-logo__subtitle {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: var(--space-2);
+  }
+
+  .apply-cta-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: var(--fs-xs);
+  }
+
+  .apply-cta-btn__text--full {
+    display: none;
+  }
+
+  .apply-cta-btn__text--short {
+    display: inline;
+  }
+
+  .hero-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-xl);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tabs-nav {
+    border-radius: var(--radius-lg);
+    width: 100%;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-chip {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------
+   2. MOBILE LANDSCAPE & PHABLETS (min-width: 481px)
+   ------------------------------------------ */
+@media (min-width: 481px) {
+  .apply-cta-btn__text--short {
+    display: none;
+  }
+  .apply-cta-btn__text--full {
+    display: inline;
+  }
+}
+
+/* ------------------------------------------
+   3. TABLETS & PORTRAIT TABLETS (min-width: 640px)
+   ------------------------------------------ */
+@media (min-width: 640px) {
+  .program-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .disclosures-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-group--full {
+    grid-column: 1 / -1;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ------------------------------------------
+   4. MEDIUM SCREENS & LAPTOPS (min-width: 768px)
+   ------------------------------------------ */
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .section {
+    padding: var(--space-16) 0;
+  }
+
+  .hero-section {
+    min-height: 620px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
+
+/* ------------------------------------------
+   5. DESKTOP & LARGE SCREENS (min-width: 1024px)
+   ------------------------------------------ */
+@media (max-width: 1279px) {
+  .nav-menu-desktop {
+    display: none; /* Switch to hamburger drawer below 1280px */
+  }
+  .hamburger-btn {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .program-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .disclosures-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  }
+}
+
+/* ------------------------------------------
+   6. ULTRA-WIDE SCREENS (min-width: 1440px)
+   ------------------------------------------ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}

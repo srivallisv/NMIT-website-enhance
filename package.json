@@ -1,0 +1,17 @@
+{
+  "name": "nmit-redesign",
+  "version": "1.0.0",
+  "description": "A modern, premium, fully responsive, and accessible redesign of the **Nitte Meenakshi Institute of Technology (NMIT)**, Bengaluru homepage portal. Built strictly with **plain HTML5, CSS3, and vanilla JavaScript** (zero frameworks, zero build tools).",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "playwright": "^1.64.0"
+  }
+}

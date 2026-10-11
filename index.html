@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Inline Early Script to Avoid Theme Flash -->
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('nmit_theme_preference');
+        if (!t) {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- Primary Meta Tags -->
+  <title>Nitte Meenakshi Institute of Technology (NMIT) | Autonomous College in Bengaluru</title>
+  <meta name="description" content="Nitte Meenakshi Institute of Technology (NMIT) is an autonomous engineering institution located in Yelahanka, Bengaluru. Explore B.Tech, B.Sc Civil Aviation, M.Tech, MBA, MCA, and Ph.D. admissions.">
+  <meta name="keywords" content="NMIT, Nitte Meenakshi, Bengaluru Engineering College, Autonomous College Bangalore, B.Tech Admissions 2026, Civil Aviation Pilot Training">
+  <meta name="author" content="NMIT Redesign Team">
+  <meta name="theme-color" content="#0a192f">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nitte.edu.in/nmit/">
+  <meta property="og:title" content="Nitte Meenakshi Institute of Technology (NMIT) Bengaluru">
+  <meta property="og:description" content="Where there is space for every dream - Autonomous institution in Yelahanka, Bengaluru.">
+  <meta property="og:image" content="assets/img/og-cover.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets (Variables -> Base -> Layout -> Components -> Responsive) -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- JSON-LD Educational Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Nitte Meenakshi Institute of Technology",
+    "alternateName": "NMIT Bengaluru",
+    "url": "https://nitte.edu.in/nmit/",
+    "logo": "assets/img/og-cover.svg",
+    "description": "Autonomous academic institution located in Yelahanka, Bengaluru offering undergraduate, postgraduate, and doctoral degrees in Engineering, Management, and Applied Sciences.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Nitte University Bengaluru Campus, Yelahanka",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560064",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-80-22167800",
+    "email": "admissions.nmit@nitte.edu.in",
+    "sameAs": [
+      "https://www.facebook.com/NMITBangalore",
+      "https://twitter.com/NMITBangalore",
+      "https://www.instagram.com/nmitbangalore/",
+      "https://www.linkedin.com/school/nmit-bangalore/",
+      "https://www.youtube.com/channel/UCDtEzhlhNmASrxUz1MxQrhQ",
+      "https://nittebangalore.blogspot.com/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Horizontal Scroll Progress Bar -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Skip to Main Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ==========================================
+       1. TOP UTILITY BAR & STICKY MAIN NAVBAR
+       ========================================== -->
+  <header class="site-header" id="site-header">
+    
+    <!-- Top Utility Bar -->
+    <div class="top-bar">
+      <div class="container top-bar__container">
+        <div class="top-bar__contact">
+          <a href="tel:+918022167800" class="top-bar__contact-link" aria-label="Call NMIT Office Phone">
+            <svg class="top-bar__contact-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>+91-80-22167800</span>
+          </a>
+          <a href="tel:+918151004455" class="top-bar__contact-link" aria-label="Call NMIT Admissions Phone">
+            <svg class="top-bar__contact-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>Admissions: +91-81510-04455</span>
+          </a>
+          <a href="mailto:admissions.nmit@nitte.edu.in" class="top-bar__contact-link" aria-label="Email NMIT Admissions">
+            <svg class="top-bar__contact-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>admissions.nmit@nitte.edu.in</span>
+          </a>
+        </div>
+        
+        <div class="top-bar__actions">
+          <div class="top-bar__links">
+            <a href="https://nmitparents.contineo.in/" class="top-bar__link" target="_blank" rel="noopener noreferrer">Parent Portal</a>
+            <a href="https://nmitresults.contineo.in/" class="top-bar__link" target="_blank" rel="noopener noreferrer">E-Results</a>
+            <a href="http://lms.nmit.ac.in/" class="top-bar__link" target="_blank" rel="noopener noreferrer">LMS</a>
+            <a href="https://www.automa.one/chat" class="top-bar__link" target="_blank" rel="noopener noreferrer">Tech QnA</a>
+          </div>
+          <!-- Dark / Light Theme Toggle -->
+          <button class="theme-toggle-btn" aria-label="Switch Theme">
+            <svg class="theme-toggle-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+            <span class="theme-toggle-btn__text">Dark Mode</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Sticky Navigation Bar -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="container main-nav__container">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-logo" aria-label="NMIT Homepage">
+          <div class="brand-logo__icon" aria-hidden="true">NMIT</div>
+          <div class="brand-logo__text">
+            <span class="brand-logo__title">NMIT</span>
+            <span class="brand-logo__subtitle">Nitte Meenakshi Institute of Technology</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Mega-Menu Disclosure Pattern -->
+        <div class="nav-menu-desktop">
+          
+          <!-- Menu 1: About Us -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-about">
+              About Us
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-about">
+              <div class="mega-dropdown__grid">
+                <a href="https://nitte.edu.in/nmit/about-nitte.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">About Nitte Education Trust</a>
+                <a href="https://nitte.edu.in/nmit/about-nmit-bangalore.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">About NMIT</a>
+                <a href="https://nitte.edu.in/nmit/vision-mission.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Vision, Mission & Core Values</a>
+                <a href="https://nitte.edu.in/nmit/founder.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Founder</a>
+                <a href="https://nitte.edu.in/nmit/advisor-message.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Advisor's Message</a>
+                <a href="https://nitte.edu.in/nmit/organizational-structure.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Organogram</a>
+                <a href="https://nitte.edu.in/nmit/principal.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Principal</a>
+                <a href="https://nitte.edu.in/nmit/governance-council.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Governing Council</a>
+                <a href="https://nitte.edu.in/discover-nitte.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Discover Nitte</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu 2: Programs -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-programs">
+              Programs
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-programs">
+              <div class="mega-dropdown__grid">
+                <a href="#programs" class="mega-dropdown__item">View All Programs Grid</a>
+                <a href="https://nitte.edu.in/nmit/btech-computer-science-engineering.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">B.Tech Computer Science & Engg</a>
+                <a href="https://nitte.edu.in/nmit/btech-aeronautical-engineering.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">B.Tech Aeronautical Engineering</a>
+                <a href="https://nitte.edu.in/nmit/bsc-civil-aviation-pilot-training.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">B.Sc Civil Aviation Pilot Training</a>
+                <a href="https://nitte.edu.in/nmit/MBA.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Master of Business Administration (MBA)</a>
+                <a href="https://nitte.edu.in/phd.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Ph.D Doctoral Studies</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu 3: Research -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-research">
+              Research
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-research">
+              <div class="mega-dropdown__grid">
+                <a href="https://nitte.edu.in/nmit/center-for-research-space.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Center for Space Research</a>
+                <a href="https://nitte.edu.in/nmit/center-for-robotics-research.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Center for Robotics Research</a>
+                <a href="https://nitte.edu.in/nmit/nmit-aicte-idea-lab.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">NMIT-AICTE Idea Lab</a>
+                <a href="https://nitte.edu.in/nmit/intel-unnati-lab.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Intel Unnati Lab</a>
+                <a href="https://researchjournalnmit.wordpress.com/" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Anusandhana Research Journal</a>
+                <a href="https://nitte.edu.in/nmit/istem.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">I-STEM Portal</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu 4: Life@NMIT -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-life">
+              Life@NMIT
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-life">
+              <div class="mega-dropdown__grid">
+                <a href="https://nitte.edu.in/nmit/sports.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Sports</a>
+                <a href="https://nitte.edu.in/nmit/ncc.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">NCC</a>
+                <a href="https://nitte.edu.in/nmit/nss.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">NSS</a>
+                <a href="https://nitte.edu.in/nmit/anaadyanta.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Anaadyanta Fest</a>
+                <a href="https://www.ecellnmit.in/" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">ECELLNMIT</a>
+                <a href="https://nitte.edu.in/nmit/library-and-information-center.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Library & Information Centre</a>
+                <a href="https://nitte.edu.in/nmit/hostels.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Hostels</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu 5: Academics & Examination -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-academics">
+              Academics & Exam
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-academics">
+              <div class="mega-dropdown__grid">
+                <a href="https://nitte.edu.in/nmit/circulars.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Circulars</a>
+                <a href="https://nitte.edu.in/nmit/syllabus.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Syllabus</a>
+                <a href="https://nitte.edu.in/nmit/examination-timetables.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Examination TimeTables</a>
+                <a href="https://nmitresults.contineo.in/" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">E-Results</a>
+                <a href="https://nmit.directverify.in/student/#/app/request" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Credential Verification</a>
+                <a href="https://nitte.edu.in/nmit/academic-calendar.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Academic Calendar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu 6: Quick Links -->
+          <div class="nav-item">
+            <button class="nav-disclosure-btn" aria-expanded="false" aria-controls="mega-quick">
+              Quick Links
+              <svg class="nav-disclosure-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="mega-dropdown" id="mega-quick">
+              <div class="mega-dropdown__grid">
+                <a href="https://nitte.edu.in/nmit/admissions.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Admissions</a>
+                <a href="https://nitte.edu.in/nmit/placement.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Placements</a>
+                <a href="https://nitte.edu.in/nmit/nirf.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">NIRF</a>
+                <a href="https://nitte.edu.in/nmit/naac.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">NAAC</a>
+                <a href="https://nitte.edu.in/nmit/contact-nmit.php" class="mega-dropdown__item" target="_blank" rel="noopener noreferrer">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Action Items (Search + Apply CTA + Hamburger) -->
+        <div class="nav-actions">
+          <button class="search-trigger-btn" aria-label="Open global search overlay">
+            <svg class="search-trigger-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </button>
+          <a href="https://apply.nitte.edu.in/" class="apply-cta-btn" target="_blank" rel="noopener noreferrer">
+            <span class="apply-cta-btn__text--full">Apply Now 2026-27</span>
+            <span class="apply-cta-btn__text--short">Apply</span>
+          </a>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-btn" aria-label="Toggle mobile drawer menu" aria-expanded="false">
+            <span class="hamburger-btn__line" aria-hidden="true"></span>
+            <span class="hamburger-btn__line" aria-hidden="true"></span>
+            <span class="hamburger-btn__line" aria-hidden="true"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Mobile Slide-In Navigation Drawer -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Menu">
+    <div class="drawer-header">
+      <div class="brand-logo__text">
+        <span class="brand-logo__title">NMIT Navigation</span>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close mobile menu">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <div class="accordion-menu">
+        
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            About Us
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="https://nitte.edu.in/nmit/about-nitte.php" class="accordion-link" target="_blank" rel="noopener noreferrer">About Nitte Education Trust</a>
+            <a href="https://nitte.edu.in/nmit/about-nmit-bangalore.php" class="accordion-link" target="_blank" rel="noopener noreferrer">About NMIT</a>
+            <a href="https://nitte.edu.in/nmit/vision-mission.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Vision & Mission</a>
+            <a href="https://nitte.edu.in/nmit/principal.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Principal</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Programs
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="#programs" class="accordion-link">B.Tech Engineering</a>
+            <a href="#programs" class="accordion-link">B.Sc Civil Aviation</a>
+            <a href="#programs" class="accordion-link">Postgraduate (M.Tech/MBA/MCA)</a>
+            <a href="https://nitte.edu.in/phd.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Ph.D Doctoral Studies</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Research
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="https://nitte.edu.in/nmit/center-for-research-space.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Center for Space Research</a>
+            <a href="https://nitte.edu.in/nmit/nmit-aicte-idea-lab.php" class="accordion-link" target="_blank" rel="noopener noreferrer">NMIT-AICTE Idea Lab</a>
+            <a href="https://researchjournalnmit.wordpress.com/" class="accordion-link" target="_blank" rel="noopener noreferrer">Anusandhana Journal</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Life@NMIT
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="https://nitte.edu.in/nmit/sports.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Sports</a>
+            <a href="https://nitte.edu.in/nmit/hostels.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Hostels</a>
+            <a href="https://nitte.edu.in/nmit/anaadyanta.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Anaadyanta</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Academics & Exam
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="https://nitte.edu.in/nmit/circulars.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Circulars</a>
+            <a href="https://nitte.edu.in/nmit/examination-timetables.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Examination TimeTables</a>
+            <a href="https://nmitresults.contineo.in/" class="accordion-link" target="_blank" rel="noopener noreferrer">E-Results</a>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            Quick Links
+            <svg class="accordion-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <a href="https://nitte.edu.in/nmit/admissions.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Admissions</a>
+            <a href="https://nitte.edu.in/nmit/placement.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Placements</a>
+            <a href="https://nitte.edu.in/nmit/contact-nmit.php" class="accordion-link" target="_blank" rel="noopener noreferrer">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="drawer-cta-container">
+        <a href="https://apply.nitte.edu.in/" class="btn-primary drawer-cta-btn" target="_blank" rel="noopener noreferrer">Apply Now 2026-27</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       MAIN CONTENT CONTAINER
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ==========================================
+         2. HERO SECTION & ACCESSIBLE CAROUSEL
+         ========================================== -->
+    <section class="hero-section" id="hero" aria-roledescription="carousel" aria-label="NMIT Highlights Carousel">
+      
+      <div class="hero-slider-track">
+        
+        <!-- Slide 1 (ONLY ONE H1 ON PAGE) -->
+        <div class="hero-slide is-active" aria-hidden="false">
+          <div class="hero-slide__overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-badge">Admissions Open 2026-27</span>
+              <h1 class="hero-title">Where there is space for every dream</h1>
+              <p class="hero-description">Autonomous engineering and research institution in Yelahanka, Bengaluru.</p>
+              <div class="hero-actions">
+                <a href="https://apply.nitte.edu.in/" class="btn-primary" target="_blank" rel="noopener noreferrer">Apply Now 2026-27 <span aria-hidden="true">→</span></a>
+                <a href="#programs" class="btn-secondary">Explore Programs</a>
+              </div>
+              
+              <!-- Stat Chips (Only Verified Numbers) -->
+              <div class="hero-stat-chips">
+                <div class="stat-chip">
+                  <div class="stat-chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99z"/></svg></div>
+                  <div>
+                    <div class="stat-chip__val">58.93 Lakhs</div>
+                    <div class="stat-chip__lbl">Highest Salary Package</div>
+                  </div>
+                </div>
+                <div class="stat-chip">
+                  <div class="stat-chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                  <div>
+                    <div class="stat-chip__val">300 Companies</div>
+                    <div class="stat-chip__lbl">Visited for Recruitment</div>
+                  </div>
+                </div>
+                <div class="stat-chip">
+                  <div class="stat-chip__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></div>
+                  <div>
+                    <div class="stat-chip__val">1200 Job Offers</div>
+                    <div class="stat-chip__lbl">Generated Per Year</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" aria-hidden="true">
+          <div class="hero-slide__overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-badge">Specialized Aviation Degree</span>
+              <h2 class="hero-subtitle">B.Sc (Hons) Civil Aviation Programs</h2>
+              <p class="hero-description">Degrees in Pilot Training and Flight Dispatcher options under NMIT.</p>
+              <div class="hero-actions">
+                <a href="https://nitte.edu.in/nmit/bsc-civil-aviation-pilot-training.php" class="btn-primary" target="_blank" rel="noopener noreferrer">View Aviation Programs <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" aria-hidden="true">
+          <div class="hero-slide__overlay"></div>
+          <div class="container">
+            <div class="hero-content">
+              <span class="hero-badge">Placements Milestone</span>
+              <h2 class="hero-subtitle">1200 Job Offers Generated Yearly</h2>
+              <p class="hero-description">Highest salary offer of 58.93 Lakhs with over 300 companies visiting campus.</p>
+              <div class="hero-actions">
+                <a href="https://nitte.edu.in/nmit/placement.php" class="btn-primary" target="_blank" rel="noopener noreferrer">Placement Details <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls & WCAG 2.2.2 Pause Button -->
+      <div class="hero-controls">
+        <button class="hero-control-btn hero-play-pause-btn" aria-label="Pause slider auto-play">
+          <span class="play-pause-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></span>
+        </button>
+        <button class="hero-control-btn hero-prev-btn" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <div class="hero-dots" role="tablist" aria-label="Slide pagination">
+          <button class="hero-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+          <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+          <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+        </div>
+        <button class="hero-control-btn hero-next-btn" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ANNOUNCEMENTS TICKER MARQUEE
+         ========================================== -->
+    <div class="ticker-strip" aria-label="Institutional Announcements">
+      <div class="container">
+        <div class="ticker-wrapper">
+          <span class="ticker-badge">Announcements</span>
+          <div class="ticker-content">
+            <div class="ticker-track">
+              <a href="https://drive.google.com/drive/folders/1kkDvke9ZZNdLoGoAl13G4N2lE-dt2Sla?usp=sharing" class="ticker-item" target="_blank" rel="noopener noreferrer">Examination Time Table of VTU and Nitte University</a>
+              <a href="https://www.aicte.gov.in/schemes/students-development-schemes" class="ticker-item" target="_blank" rel="noopener noreferrer">Check AICTE Scholarship/Fellowship Schemes</a>
+              <a href="https://nitte.edu.in/nmit/announcement.php" class="ticker-item" target="_blank" rel="noopener noreferrer">Timetable for SEE May - June 2025 (Even Semesters) under VTU</a>
+              <a href="https://nitte.edu.in/nmit/announcement.php" class="ticker-item" target="_blank" rel="noopener noreferrer">Timetable for SEE May - June 2025 (Even Semesters) under NDU</a>
+              
+              <!-- Cloned items with aria-hidden="true" for accessible marquee -->
+              <a href="https://drive.google.com/drive/folders/1kkDvke9ZZNdLoGoAl13G4N2lE-dt2Sla?usp=sharing" class="ticker-item" target="_blank" rel="noopener noreferrer" aria-hidden="true">Examination Time Table of VTU and Nitte University</a>
+              <a href="https://www.aicte.gov.in/schemes/students-development-schemes" class="ticker-item" target="_blank" rel="noopener noreferrer" aria-hidden="true">Check AICTE Scholarship/Fellowship Schemes</a>
+            </div>
+          </div>
+          <button class="ticker-pause-btn" aria-label="Pause Announcement Ticker">
+            <span class="ticker-pause-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg></span>
+            <span class="ticker-pause-text">Pause</span>
+          </button>
+          <a href="https://nitte.edu.in/nmit/announcement.php" class="ticker-view-all" target="_blank" rel="noopener noreferrer">View All</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         NEW SECTION 1: ABOUT NMIT (#about)
+         ========================================== -->
+    <section class="section" id="about" aria-label="About NMIT">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Institution Overview</span>
+          <h2 class="section-title">About NMIT Bengaluru</h2>
+          <p class="section-description">Nitte Meenakshi Institute of Technology (NMIT) is an autonomous engineering college located in Yelahanka, Bengaluru. The institution provides undergraduate, postgraduate, and doctoral degrees approved by AICTE and affiliated to VTU and Nitte University.</p>
+        </div>
+        <div class="about-btn-group">
+          <a href="https://nitte.edu.in/nmit/about-nmit-bangalore.php" class="btn-primary" target="_blank" rel="noopener noreferrer">Read About NMIT <span aria-hidden="true">→</span></a>
+          <a href="https://nitte.edu.in/nmit/vision-mission.php" class="btn-secondary btn-secondary--outline" target="_blank" rel="noopener noreferrer">Vision & Mission</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. PROGRAMS SECTION (ACCESSIBLE TABS + SEARCH)
+         ========================================== -->
+    <section class="section section--alt" id="programs" aria-label="Academic Programs">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Academics</span>
+          <h2 class="section-title">Academic Programs</h2>
+          <p class="section-description">Explore undergraduate engineering branches, civil aviation programs, master's degrees, and doctoral research.</p>
+        </div>
+
+        <div class="program-filter-bar">
+          <div class="program-search-box">
+            <svg class="program-search-box__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input type="text" class="program-search-input" placeholder="Search programs by keyword (e.g. AI, Aviation, Civil)..." aria-label="Search Programs">
+          </div>
+
+          <!-- ARIA Tablist Pattern -->
+          <div class="tabs-nav" role="tablist" aria-label="Program categories">
+            <button class="tab-btn program-tab-btn is-active" role="tab" aria-selected="true" aria-controls="programs-grid" id="tab-all" data-tab="all" tabindex="0">
+              All Programs <span class="tab-count">(23)</span>
+            </button>
+            <button class="tab-btn program-tab-btn" role="tab" aria-selected="false" aria-controls="programs-grid" id="tab-btech" data-tab="btech" tabindex="-1">
+              B.Tech <span class="tab-count">(12)</span>
+            </button>
+            <button class="tab-btn program-tab-btn" role="tab" aria-selected="false" aria-controls="programs-grid" id="tab-bsc" data-tab="bsc" tabindex="-1">
+              B.Sc (Hons) <span class="tab-count">(2)</span>
+            </button>
+            <button class="tab-btn program-tab-btn" role="tab" aria-selected="false" aria-controls="programs-grid" id="tab-pg" data-tab="pg" tabindex="-1">
+              Postgraduate <span class="tab-count">(6)</span>
+            </button>
+            <button class="tab-btn program-tab-btn" role="tab" aria-selected="false" aria-controls="programs-grid" id="tab-phd" data-tab="phd" tabindex="-1">
+              Doctoral <span class="tab-count">(1)</span>
+            </button>
+            <button class="tab-btn program-tab-btn" role="tab" aria-selected="false" aria-controls="programs-grid" id="tab-supporting" data-tab="supporting" tabindex="-1">
+              Supporting Depts <span class="tab-count">(2)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Programs Grid (Rendered dynamically from js/data.js with static semantic fallback) -->
+        <div class="program-grid" id="programs-grid" role="region" aria-live="polite">
+          
+          <!-- Static Fallback Item -->
+          <article class="program-card" data-category="btech">
+            <div class="program-card__header">
+              <div class="program-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></div>
+              <span class="program-badge">B.Tech</span>
+            </div>
+            <h3 class="program-card__title">Artificial Intelligence & Data Science</h3>
+            <div class="program-card__footer">
+              <a href="https://nitte.edu.in/nmit/btech-in-artificialintelligence-and-datascience.php" class="program-card__link" target="_blank" rel="noopener noreferrer">Learn more <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty Search Result Notification -->
+        <div class="program-empty-state" id="program-empty-state" role="status" aria-live="polite" hidden></div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         NEW SECTION 2: RESEARCH (#research)
+         ========================================== -->
+    <section class="section" id="research" aria-label="Research & Innovation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Innovation & Labs</span>
+          <h2 class="section-title">Research Centers & Promotion</h2>
+          <p class="section-description">Dedicated centers for multi-disciplinary research, innovation, and consultancy policy.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg></div>
+            <h3 class="highlight-title">Center for Space Research</h3>
+            <p class="highlight-text">Advanced satellite tracking and space systems research laboratory.</p>
+            <a href="https://nitte.edu.in/nmit/center-for-research-space.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7z"/></svg></div>
+            <h3 class="highlight-title">NMIT-AICTE Idea Lab</h3>
+            <p class="highlight-text">Maker laboratory for rapid prototyping and technology development.</p>
+            <a href="https://nitte.edu.in/nmit/nmit-aicte-idea-lab.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12z"/></svg></div>
+            <h3 class="highlight-title">Anusandhana Research Journal</h3>
+            <p class="highlight-text">Peer-reviewed institutional journal promoting academic publishing.</p>
+            <a href="https://researchjournalnmit.wordpress.com/" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Journal Portal →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         NEW SECTION 3: ACADEMICS (#academics)
+         ========================================== -->
+    <section class="section section--alt" id="academics" aria-label="Academic Resources">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Student Services</span>
+          <h2 class="section-title">Academics & Examination Links</h2>
+          <p class="section-description">Direct access to timetables, circulars, syllabus details, and online result portals.</p>
+        </div>
+
+        <div class="disclosures-grid">
+          <a href="https://nitte.edu.in/nmit/circulars.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__title">Circulars</div>
+            <div class="disclosure-card__desc">Latest notifications</div>
+          </a>
+          <a href="https://nitte.edu.in/nmit/syllabus.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__title">Syllabus</div>
+            <div class="disclosure-card__desc">Course curriculum</div>
+          </a>
+          <a href="https://nitte.edu.in/nmit/examination-timetables.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__title">Exam Timetables</div>
+            <div class="disclosure-card__desc">SEE schedules</div>
+          </a>
+          <a href="https://nmitresults.contineo.in/" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__title">E-Results</div>
+            <div class="disclosure-card__desc">Contineo result portal</div>
+          </a>
+          <a href="https://nmit.directverify.in/student/#/app/request" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__title">Verification</div>
+            <div class="disclosure-card__desc">DirectVerify service</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. PLACEMENTS SECTION
+         ========================================== -->
+    <section class="section" id="placements" aria-label="Placements Information">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Career Record</span>
+          <h2 class="section-title">Placements at a Glance</h2>
+          <p class="section-description">Department of Training and Placement statistics for NMIT Bengaluru.</p>
+        </div>
+
+        <div class="placements-banner">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-box__val" data-target="58.93" data-suffix=" Lakhs" data-prefix="₹">₹58.93 Lakhs</div>
+              <div class="stat-box__lbl">Highest Salary Package</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box__val" data-target="300" data-suffix="+">300+</div>
+              <div class="stat-box__lbl">Companies Visited</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-box__val" data-target="1200" data-suffix="+">1200+</div>
+              <div class="stat-box__lbl">Job Offers Per Year</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="placements-footer-link">
+          <a href="https://nitte.edu.in/nmit/placement.php" class="btn-primary" target="_blank" rel="noopener noreferrer">View Placement Page <span aria-hidden="true">→</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. ACCREDITATIONS & DISCLOSURES
+         ========================================== -->
+    <section class="section section--alt" id="rankings" aria-label="Accreditations and Disclosures">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Mandatory Disclosures</span>
+          <h2 class="section-title">Accreditations & Official Reports</h2>
+          <p class="section-description">Institutional accreditation details and regulatory committee disclosures.</p>
+        </div>
+
+        <div class="disclosures-grid">
+          
+          <a href="https://nitte.edu.in/nmit/naac.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__icon" aria-hidden="true">NAAC</div>
+            <h3 class="disclosure-card__title">NAAC Report</h3>
+            <div class="disclosure-card__desc">Accreditation Details</div>
+          </a>
+
+          <a href="https://nitte.edu.in/nmit/nba.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__icon" aria-hidden="true">NBA</div>
+            <h3 class="disclosure-card__title">NBA DCS Reports</h3>
+            <div class="disclosure-card__desc">Program Accreditations</div>
+          </a>
+
+          <a href="https://nitte.edu.in/nmit/nirf.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__icon" aria-hidden="true">NIRF</div>
+            <h3 class="disclosure-card__title">NIRF Submission</h3>
+            <div class="disclosure-card__desc">Data Reports</div>
+          </a>
+
+          <a href="https://nitte.edu.in/nmit/iqac.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__icon" aria-hidden="true">IQAC</div>
+            <h3 class="disclosure-card__title">IQAC Committee</h3>
+            <div class="disclosure-card__desc">Quality Cell</div>
+          </a>
+
+          <a href="https://nitte.edu.in/nmit/mandatory.php" class="disclosure-card" target="_blank" rel="noopener noreferrer">
+            <div class="disclosure-card__icon" aria-hidden="true">INFO</div>
+            <h3 class="disclosure-card__title">Mandatory Disclosure</h3>
+            <div class="disclosure-card__desc">AICTE Public Disclosure</div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. NEWS SECTION
+         ========================================== -->
+    <section class="section" id="news" aria-label="Campus News">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Latest Updates</span>
+          <h2 class="section-title">Institutional News</h2>
+          <p class="section-description">Recent developments, faculty honors, and academic achievements.</p>
+        </div>
+
+        <div class="news-grid">
+          
+          <article class="news-card">
+            <div class="news-card__img">
+              <img src="assets/img/campus-2.svg" alt="Cybersecurity research placeholder" loading="lazy">
+              <span class="news-card__date">28 Jul 2026</span>
+            </div>
+            <div class="news-card__body">
+              <h3 class="news-card__title">Nitte University Alumnus Sumanth Kamath Earns Global Recognition for Responsible Cybersecurity Research</h3>
+              <a href="https://nitte.edu.in/nmit/news-details.php?id=803" class="news-card__link" target="_blank" rel="noopener noreferrer">Read Story <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__img">
+              <img src="assets/img/campus-1.svg" alt="Wireless tech FDP placeholder" loading="lazy">
+              <span class="news-card__date">22 Jul 2026</span>
+            </div>
+            <div class="news-card__body">
+              <h3 class="news-card__title">NMIT to Host 5-Day Faculty Development Program on 5G and Emerging 6G Technologies</h3>
+              <a href="https://nitte.edu.in/nmit/news-details.php?id=801" class="news-card__link" target="_blank" rel="noopener noreferrer">Read Story <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__img">
+              <img src="assets/img/campus-3.svg" alt="Royal Aeronautical Society placeholder" loading="lazy">
+              <span class="news-card__date">15 Jul 2026</span>
+            </div>
+            <div class="news-card__body">
+              <h3 class="news-card__title">Dr. Mamatha Maheshwarappa Joins the Prestigious Fellowship of the Royal Aeronautical Society</h3>
+              <a href="https://nitte.edu.in/nmit/news-details.php?id=802" class="news-card__link" target="_blank" rel="noopener noreferrer">Read Story <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__img">
+              <img src="assets/img/campus-4.svg" alt="Aeronautical Society India placeholder" loading="lazy">
+              <span class="news-card__date">05 Mar 2026</span>
+            </div>
+            <div class="news-card__body">
+              <h3 class="news-card__title">NMIT Aeronautical Engineering Student Chapter Recognized by Aeronautical Society of India</h3>
+              <a href="https://nitte.edu.in/nmit/news-details.php?id=797" class="news-card__link" target="_blank" rel="noopener noreferrer">Read Story <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. CAMPUS LIFE & GALLERY
+         ========================================== -->
+    <section class="section section--alt" id="campus" aria-label="Campus Life & Facilities">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Facilities</span>
+          <h2 class="section-title">Campus Life & Infrastructure</h2>
+          <p class="section-description">Key facility options provided at NMIT Yelahanka campus.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <h3 class="highlight-title">Library & Information Centre</h3>
+            <p class="highlight-text">Central repository of printed books, journals, and digital database access.</p>
+            <a href="https://nitte.edu.in/nmit/library-and-information-center.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3 class="highlight-title">Hostels</h3>
+            <p class="highlight-text">On-campus residential facilities for students with dining options.</p>
+            <a href="https://nitte.edu.in/nmit/hostels.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3 class="highlight-title">Health Care</h3>
+            <p class="highlight-text">Medical consultation and student health care support on campus.</p>
+            <a href="https://nitte.edu.in/nmit/healthcare.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3 class="highlight-title">Gymnasium</h3>
+            <p class="highlight-text">Fitness center and physical workout equipment for student wellness.</p>
+            <a href="https://nitte.edu.in/nmit/gymnasium.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3 class="highlight-title">Seminar Halls & Auditorium</h3>
+            <p class="highlight-text">Venues for academic conferences, guest lectures, and student events.</p>
+            <a href="https://nitte.edu.in/nmit/seminar-hall.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+
+          <div class="highlight-card">
+            <h3 class="highlight-title">Transportation & Parking</h3>
+            <p class="highlight-text">Bus service routes connecting various parts of Bengaluru city.</p>
+            <a href="https://nitte.edu.in/nmit/transport.php" class="program-card__link highlight-card__link" target="_blank" rel="noopener noreferrer">Official Page →</a>
+          </div>
+        </div>
+
+        <!-- Lightbox Gallery (Self-made placeholder SVGs with keyboard buttons) -->
+        <h3 class="gallery-heading">Campus Visual Gallery (Click to Enlarge)</h3>
+        <div class="gallery-grid">
+          <button class="gallery-item-btn" aria-label="Open Academic Block photo preview">
+            <img src="assets/img/campus-1.svg" alt="Academic Block visual placeholder" loading="lazy">
+            <div class="gallery-item__overlay">Academic Block Placeholder</div>
+          </button>
+          <button class="gallery-item-btn" aria-label="Open Research Lab photo preview">
+            <img src="assets/img/campus-2.svg" alt="Research Laboratory visual placeholder" loading="lazy">
+            <div class="gallery-item__overlay">Research Lab Placeholder</div>
+          </button>
+          <button class="gallery-item-btn" aria-label="Open Digital Library photo preview">
+            <img src="assets/img/campus-3.svg" alt="Central Library visual placeholder" loading="lazy">
+            <div class="gallery-item__overlay">Digital Library Placeholder</div>
+          </button>
+          <button class="gallery-item-btn" aria-label="Open Sports Arena photo preview">
+            <img src="assets/img/campus-4.svg" alt="Sports Complex visual placeholder" loading="lazy">
+            <div class="gallery-item__overlay">Sports Arena Placeholder</div>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         9. VIDEO SECTION
+         ========================================== -->
+    <section class="section" id="videos" aria-label="Campus Videos">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Video Gallery</span>
+          <h2 class="section-title">Official Video Media</h2>
+          <p class="section-description">Embedded YouTube media features provided by NMIT.</p>
+        </div>
+
+        <div class="video-grid" id="video-grid">
+          <!-- Rendered dynamically from js/data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         10. NOTABLE ALUMNI SECTION
+         ========================================== -->
+    <section class="section section--alt" id="alumni" aria-label="Notable Alumni">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">Alumni Network</span>
+          <h2 class="section-title">Our Distinguished Alumni</h2>
+          <p class="section-description">NMIT graduates who have achieved prominence in industry, government, research, and creative fields.</p>
+        </div>
+
+        <div class="alumni-scroll-wrapper" id="alumni-grid" aria-label="Alumni list horizontal carousel">
+          <!-- Rendered dynamically from js/data.js as accessible buttons -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         11. ADMISSIONS QUICK ENQUIRY FORM
+         ========================================== -->
+    <section class="section" id="enquiry" aria-label="Quick Admissions Enquiry">
+      <div class="container">
+        
+        <div class="enquiry-card">
+          <div class="enquiry-card__header">
+            <span class="section-badge">Contact Admissions</span>
+            <h2 class="section-title">Quick Admissions Enquiry</h2>
+            <p class="section-description">Fill out your details below to launch your email client with a prefilled enquiry message.</p>
+          </div>
+
+          <form id="admissions-enquiry-form" novalidate>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="field-name" class="form-label">Full Name *</label>
+                <input type="text" id="field-name" class="form-input" placeholder="e.g. Rahul Sharma" autocomplete="name" aria-describedby="err-name" required>
+                <span id="err-name" class="form-error-msg" role="alert">Please enter your full name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-phone" class="form-label">Mobile Number *</label>
+                <input type="tel" id="field-phone" class="form-input" placeholder="10-digit mobile number" autocomplete="tel" aria-describedby="err-phone" required>
+                <span id="err-phone" class="form-error-msg" role="alert">Enter a valid 10-digit Indian mobile number</span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-email" class="form-label">Email Address *</label>
+                <input type="email" id="field-email" class="form-input" placeholder="e.g. rahul@example.com" autocomplete="email" aria-describedby="err-email" required>
+                <span id="err-email" class="form-error-msg" role="alert">Enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-course" class="form-label">Course of Interest *</label>
+                <select id="field-course" class="form-select" aria-describedby="err-course" required>
+                  <option value="">-- Select Course --</option>
+                  <option value="B.Tech Computer Science & Engineering">B.Tech Computer Science & Engineering</option>
+                  <option value="B.Tech Aeronautical Engineering">B.Tech Aeronautical Engineering</option>
+                  <option value="B.Tech Artificial Intelligence & Data Science">B.Tech Artificial Intelligence & Data Science</option>
+                  <option value="B.Sc Civil Aviation Pilot Training">B.Sc Civil Aviation Pilot Training</option>
+                  <option value="Master of Business Administration (MBA)">Master of Business Administration (MBA)</option>
+                  <option value="Ph.D Doctoral Studies">Ph.D Doctoral Studies</option>
+                </select>
+                <span id="err-course" class="form-error-msg" role="alert">Please select a course of interest</span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-city" class="form-label">City *</label>
+                <input type="text" id="field-city" class="form-input" placeholder="e.g. Bengaluru" autocomplete="address-level2" aria-describedby="err-city" required>
+                <span id="err-city" class="form-error-msg" role="alert">Please enter your city</span>
+              </div>
+
+              <div class="form-group">
+                <label for="field-state" class="form-label">State *</label>
+                <input type="text" id="field-state" class="form-input" placeholder="e.g. Karnataka" autocomplete="address-level1" aria-describedby="err-state" required>
+                <span id="err-state" class="form-error-msg" role="alert">Please enter your state</span>
+              </div>
+
+            </div>
+
+            <div class="form-actions-row">
+              <button type="submit" class="btn-primary btn-primary--flex">Send Mailto Enquiry <span aria-hidden="true">→</span></button>
+              <button type="button" id="whatsapp-enquiry-btn" class="whatsapp-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+                <span>Chat on WhatsApp</span>
+              </button>
+            </div>
+
+            <p class="form-disclaimer">Academic demo project, not the official NMIT form. For official admissions use the <a href="https://apply.nitte.edu.in/" target="_blank" rel="noopener noreferrer" class="form-disclaimer__link">Apply Now portal</a>.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       12. SITE FOOTER
+       ========================================== -->
+  <footer class="site-footer" id="footer" aria-label="Site Footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div>
+          <h3 class="footer-col__title">NMIT Bengaluru</h3>
+          <p class="footer-desc">Nitte Meenakshi Institute of Technology (NMIT) is an Autonomous Institution in Bengaluru, Karnataka, affiliated to Visvesvaraya Technological University (VTU) and Nitte University.</p>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/NMITBangalore" class="social-icon-btn" aria-label="NMIT Facebook" target="_blank" rel="noopener noreferrer"><svg class="social-icon-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.75 5.65c1.08 0 2.21.19 2.21.19v2.44h-1.25c-1.23 0-1.62.77-1.62 1.56V12h2.77l-.44 3h-2.33v6.8c4.56-.93 8-4.96 8-9.8z"/></svg></a>
+            <a href="https://twitter.com/NMITBangalore" class="social-icon-btn" aria-label="NMIT Twitter" target="_blank" rel="noopener noreferrer"><svg class="social-icon-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+            <a href="https://www.instagram.com/nmitbangalore/" class="social-icon-btn" aria-label="NMIT Instagram" target="_blank" rel="noopener noreferrer"><svg class="social-icon-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://www.linkedin.com/school/nmit-bangalore/" class="social-icon-btn" aria-label="NMIT LinkedIn" target="_blank" rel="noopener noreferrer"><svg class="social-icon-btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Quick Links</h3>
+          <div class="footer-links">
+            <a href="https://nitte.edu.in/nmit/about-nmit-bangalore.php" class="footer-link" target="_blank" rel="noopener noreferrer">About NMIT</a>
+            <a href="#programs" class="footer-link">B.Tech Programs</a>
+            <a href="https://nitte.edu.in/nmit/placement.php" class="footer-link" target="_blank" rel="noopener noreferrer">Placements</a>
+            <a href="https://nitte.edu.in/nmit/alumni-association.php" class="footer-link" target="_blank" rel="noopener noreferrer">Alumni Association</a>
+            <a href="https://nitte.edu.in/nmit/circulars.php" class="footer-link" target="_blank" rel="noopener noreferrer">Circulars</a>
+            <a href="https://apply.nitte.edu.in/" class="footer-link" target="_blank" rel="noopener noreferrer">Admissions Portal</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Campus Contact</h3>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Nitte Meenakshi Institute of Technology, Nitte University Bengaluru Campus, Yelahanka, Bengaluru, Karnataka-560064</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>+91-80-22167800 / +91-81510-04455</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>admissions.nmit@nitte.edu.in</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Campus Location</h3>
+          <div class="footer-map-container">
+            <iframe title="NMIT Bengaluru Campus Location Map" src="https://maps.google.com/maps?q=Nitte%20Meenakshi%20Institute%20of%20Technology%20Bengaluru&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Nitte Meenakshi Institute of Technology (NMIT). Academic Redesign Project.</div>
+        <div class="footer-legal-links">
+          <a href="https://nitte.edu.in/privacy.php" class="footer-legal-link" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <a href="https://nitte.edu.in/legal.php" class="footer-legal-link" target="_blank" rel="noopener noreferrer">Legal Disclaimer</a>
+          <a href="https://nitte.edu.in/feedback/index.php?mp=1" class="footer-legal-link" target="_blank" rel="noopener noreferrer">Grievances</a>
+          <a href="https://nitte.edu.in/feedback/" class="footer-legal-link" target="_blank" rel="noopener noreferrer">Feedback</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       13. DIV MODALS & TOAST NOTIFICATION
+       ========================================== -->
+  
+  <div class="modal-backdrop" aria-hidden="true"></div>
+
+  <!-- 1. Alumni Modal -->
+  <div class="modal" id="alumni-modal" role="dialog" aria-modal="true" aria-labelledby="modal-alumni-name" hidden>
+    <button class="modal-close-btn" aria-label="Close alumni details modal">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="modal__header">
+      <h3 id="modal-alumni-name" class="modal__title">Alumni Name</h3>
+      <div id="modal-alumni-dept" class="modal__dept">Department</div>
+      <div id="modal-alumni-batch" class="modal__batch">Batch</div>
+    </div>
+    <div class="modal__meta">
+      <strong class="modal__role-label">Current Role:</strong>
+      <div id="modal-alumni-role" class="modal__role-title">Role Title</div>
+    </div>
+    <p id="modal-alumni-bio" class="modal__bio">Bio details...</p>
+  </div>
+
+  <!-- 2. Video Modal -->
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-video-title" hidden>
+    <button class="modal-close-btn" aria-label="Close video player modal">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <h3 id="modal-video-title" class="modal__title">Campus Video</h3>
+    <div id="modal-video-container" class="modal-video-container">
+      <!-- Dynamic YouTube iframe injected on open and cleared on close -->
+    </div>
+  </div>
+
+  <!-- 3. Search Overlay Modal -->
+  <div class="modal search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Global search modal" hidden>
+    <button class="modal-close-btn" aria-label="Close search modal">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <h3 class="modal__title">Search NMIT Portal</h3>
+    <input type="text" id="search-modal-input" class="search-input-large" placeholder="Type a program, section, or facility name..." aria-label="Search input text">
+    <div id="search-modal-results" class="search-results-list" role="region" aria-live="polite"></div>
+  </div>
+
+  <!-- 4. Lightbox Gallery Modal -->
+  <div class="modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Campus photo preview modal" hidden>
+    <button class="modal-close-btn" aria-label="Close photo preview modal">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="lightbox-content">
+      <img id="modal-lightbox-img" class="lightbox-img" src="assets/img/campus-1.svg" alt="Campus Photo Preview">
+      <p id="modal-lightbox-caption" class="lightbox-caption"></p>
+      <div class="lightbox-nav">
+        <button id="lightbox-prev-btn" class="btn-secondary btn-secondary--sm" aria-label="Previous photo">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          <span>Previous</span>
+        </button>
+        <button id="lightbox-next-btn" class="btn-secondary btn-secondary--sm" aria-label="Next photo">
+          <span>Next</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div class="toast-container">
+    <div class="toast" id="toast-notification" role="status" aria-live="polite">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      <span class="toast-msg">Action completed</span>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- JavaScript Modules (data.js loaded FIRST) -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

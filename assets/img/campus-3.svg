@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#111827"/>
+  <rect x="80" y="80" width="640" height="440" rx="16" fill="#1f2937" stroke="#374151" stroke-width="4"/>
+  <path d="M150 200 H650 V450 H150 Z" fill="#0b0f19" opacity="0.8"/>
+  <text x="400" y="140" fill="#f8fafc" font-family="sans-serif" font-size="28" font-weight="bold" text-anchor="middle">Central Library Hub Placeholder</text>
+  <text x="400" y="550" fill="#94a3b8" font-family="sans-serif" font-size="18" text-anchor="middle">Representative visual representation of digital library facilities</text>
+</svg>
