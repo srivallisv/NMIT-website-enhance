@@ -1,4 +1,4 @@
-# NMIT Redesign v3 - Verified Homepage Portal
+# NMIT Redesign - Verified Homepage Portal
 
 A modern, responsive, and accessible redesign of the **Nitte Meenakshi Institute of Technology (NMIT)**, Bengaluru homepage portal. Built strictly with **plain HTML5, CSS3, and vanilla JavaScript** (zero frameworks, zero build tools).
 
